@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+main(){
+	int a,b,c,d;
+	cin>>a;
+	for(b=0;b<a;b++){
+		if((b%2)==0){
+			for(c=0;c<a;c++){
+				if((c%2)==0){
+					for(d=0;d<a;d++){
+						cout<<"0";
+					}
+				}
+				if((c%2)!=0){
+					for(d=0;d<a;d++){
+						cout<<"*";
+					}
+				}
+			}	
+		}
+		if((b%2)!=0){
+				for(c=0;c<a;c++){
+				if((c%2)==0){
+					for(d=0;d<a;d++){
+						cout<<"*";
+					}
+				}
+				if((c%2)!=0){
+					for(d=0;d<a;d++){
+						cout<<"0";
+					}
+				}
+			}		
+		}
+		cout<<endl;
+	}
+	cin>>a;
+}
